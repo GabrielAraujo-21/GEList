@@ -23,7 +23,7 @@
         <RouterLink
           v-for="(item, i) in items"
           :key="i"
-          :to="`/${item.text.toLowerCase().replace(/ /g, '-')}`"
+          :to="item.to"
         >
           <v-list-item :value="item" color="primary">
             <template v-slot:prepend>
@@ -48,7 +48,7 @@
       </template>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>GE-List</v-app-bar-title>
+      <v-app-bar-title>GEList - Crie Um Lista Fácil e Rápido</v-app-bar-title>
     </v-app-bar>
 
     <v-main>
