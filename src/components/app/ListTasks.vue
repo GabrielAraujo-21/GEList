@@ -28,10 +28,10 @@
             <v-menu>
                 <template v-slot:activator="{ props }">
                     <v-btn
-                    color="grey-lighten-1"
-                    icon="mdi-dots-vertical"
-                    variant="text"
-                    v-bind="props"
+                      color="grey-lighten-1"
+                      icon="mdi-dots-vertical"
+                      variant="text"
+                      v-bind="props"
                     >
                     </v-btn>
                 </template>
